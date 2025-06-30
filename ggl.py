@@ -18,7 +18,7 @@ nltk.download('stopwords', quiet=True)
 def chat_with_tax_ai(user_input):
     try:
         response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-4.1-mini",
             messages=[{"role": "system", "content": "You are a helpful tax assistant. Provide accurate and concise information about tax-related queries."},
                 {"role": "user", "content": user_input}])
         return response.choices[0].message['content']
