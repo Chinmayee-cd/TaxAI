@@ -10,7 +10,7 @@ import re
 from cryptography.fernet import Fernet
 import openai
 
-openai.api_key = 'your-api-key'
+openai.api_key = st.secrets["openai"]["api_key"]
 
 nltk.download('punkt', quiet=True)
 nltk.download('stopwords', quiet=True)
