@@ -6,5 +6,3 @@ nltk
 cryptography
 openai
 BeautifulSoup
-requests
-re
